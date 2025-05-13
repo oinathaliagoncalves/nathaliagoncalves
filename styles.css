@@ -1,0 +1,386 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 240, 232);
+    margin: 0;
+    font-family: Outfit, sans-serif;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: rgb(247, 240, 232);
+    z-index: 1000;
+}
+
+.left {
+    font-size: 2rem;
+    color: black;
+    font-weight: 400;
+    padding-left: 2rem;
+    flex-shrink: 0; /* Prevent text shrinking */
+}
+
+.right {
+    display: flex;
+    gap: min(4vw, 3rem); /* Fluid gap based on viewport width */
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+.right a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    white-space: nowrap; /* Prevent text wrapping */
+    position: relative;
+}
+
+.right a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(166, 85, 152);
+}
+
+.yellowBlockContainer {
+    width: 100%;
+    display: flex;
+    background: rgb(236, 199, 76);
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.overlay-image {
+    max-width: 600px; /* Prevent image overflow */
+    width: 40vw; /* Fluid width based on viewport */
+}
+
+h1 {
+    max-width: 600px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 2.2rem; /* Base font size */
+    letter-spacing: 3px;
+    line-height: 1.2;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.middle-block {
+    position: relative;
+    z-index: 2;
+    border-radius: 0 0 300px 300px; /* Arredonda apenas os cantos inferiores */
+}
+
+.spiral {
+    position: absolute;
+    right: 10%;
+    top: -5rem;
+}
+
+#projects h2 {
+    padding-top: 6rem
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    justify-content: center;
+    display: flex;
+    color: rgba(69, 62, 62, 1);
+}
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.locketContainer {
+    display: grid;
+    place-items: center;
+}
+
+.locket {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos da div posicionados distantes um do outro */
+    padding-top: 50px;
+    padding-left: 100px;     
+    background-color: rgb(192, 150, 45);
+    margin-top: 100px;
+    width: 80%;
+    border-radius: 40px;
+    z-index: 2;
+    margin-bottom: 82px;
+}
+
+.locketText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px
+}
+
+.image-locket {
+    max-width: 600px;
+    width: 40vw;
+    height: 100%;
+    z-index: 3; /* Coloca a imagem acima do bloco amarelo */
+}
+
+h3 {
+    color: rgb(247, 240, 232);
+    z-index: 3;
+    font-size: 2.5rem;
+
+    
+}
+
+.projetoButtonLocket {
+    color: rgb(247, 240, 232);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.27); /* a = transparencia */
+    border: none;
+    padding: 12px 16px; /* padding horizontal e padding vertical */
+    cursor: pointer;
+    transition: .5s ease-in-out all;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.projetoButtonLocket:hover {
+    background-color: rgb(152, 123, 52);
+
+}
+
+.locketFrase {
+    color: rgb(247, 240, 232);
+    font-size: 2rem;
+}
+
+.purple-block {
+    position: relative;
+    background-color: rgba(166, 85, 152, 1);
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    height: 100vh; /* Full viewport height */
+    min-height: 1000px; /* Minimum height for large content */
+}
+
+.asterisk {
+    position: absolute;
+    left: 10%;
+    top: -5rem
+}
+
+.H1bold {
+    font-weight: 900;
+}
+
+.skills {
+    color: rgb(247, 240, 232);
+    padding-top: 4rem;
+}
+
+.containerSkills {
+    display: flex;
+    justify-content:space-around;
+    color:rgb(247, 240, 232);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 7%;
+}
+
+.skillColumn {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.skillColumnTitle {
+    margin-bottom: 2rem;;
+}
+
+.skill {
+    width: 60%;
+    margin: 2rem 2rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.mainColorSkill {
+    background-color: rgba(192, 150, 45, 1);
+    color:rgb(247, 240, 232);
+}
+
+.secondaryColorSkill {
+    background-color: rgba(236, 199, 76, 1);
+    color: rgb(69, 62, 62);
+}
+
+.thirdColorSkill {
+    background-color:  rgba(230, 178, 9, 1);
+    color:rgb(247, 240, 232);
+}
+
+.fourthColorSkill {
+    background-color:  rgba(255, 221, 136, 1);
+    color: rgb(69, 62, 62);
+}
+
+.about {
+    padding-top: 8%;
+}
+
+.containerAbout {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 5rem 10rem;
+    align-items: center;
+}
+
+
+
+.aboutText {
+
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 1rem; /* Base font size */
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 10%;
+    width: 100%;
+
+    
+
+}
+
+.aboutImage {
+    max-width: 600px; 
+    width: 40vw;
+}
+
+.container {
+    display: flex;
+}
+
+.letsTalkOuterBlock {
+    padding: 1rem;
+}
+
+.letsTalkInnerBlock {
+    padding: 5rem;
+    background-color: rgb(236, 199, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letsTalkTitle {
+    position: relative;
+    white-space: nowrap;
+    width: min-content;
+    margin-bottom: 5rem;
+    padding-top: 0;
+}
+
+.letsTalkTitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 130%;
+    height: 4px;
+    background-color: rgb(166, 85, 152);
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+.letsTalkText {
+    display: flex;
+    gap: 5rem;
+}
+
+.letsTalkText a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.letsTalkText a:hover {
+    color: rgb(166, 85, 152);
+}
+
+@media (max-width: 1200px) {
+    .containerAbout {
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerAbout {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .yellowBlockContainer {
+        gap: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .spiral {
+        transform: scale(0.7);
+    }
+    
+    .locket {
+        padding: 1rem 3rem;
+    }
+
+    .projetoButtonLocket {
+        margin-top: 2rem;
+    }
+
+    .image-locket {
+        display: none;
+    }
+
+    .locketText {
+        padding: 0;
+    }
+
+    .containerSkills {
+        flex-direction: column;
+    }
+
+    .purple-block {
+        height: auto; 
+    }
+}
