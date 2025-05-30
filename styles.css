@@ -269,7 +269,7 @@ h3 {
 
     font-family: "Merriweather", serif;
     font-weight: 300;
-    font-size: 1rem; /* Base font size */
+    font-size: 1rem; 
     letter-spacing: 2px;
     line-height: 1.5;
     padding-top: 10%;
@@ -333,6 +333,42 @@ h3 {
 
 .letsTalkText a:hover {
     color: rgb(166, 85, 152);
+}
+
+.goldBlockContainer {
+    position: relative;
+    background-color: rgba(192, 150, 45, 1);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem;
+  
+}
+
+.locktTextContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5rem 25rem;
+    align-items: center;
+}
+
+.locktText {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 1.5rem; 
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.locketImagePage {
+    width: 100%;
+}
+
+.locketTitle {
+    color: rgb(247, 240, 232);
 }
 
 @media (max-width: 1200px) {

@@ -40,7 +40,7 @@
                     <div class="locketText">
                         <h3><b>LOCKET</b></h3>
                         <p class="locketFrase"> A case study on enhancing a social app</p> 
-                        <button class="projetoButtonLocket">VIEW PROJECT</button>
+                        <button class="projetoButtonLocket" id="projetoButtonLocket">VIEW PROJECT</button>
                     </div>
                     <div>
                         <img src="Vector.png" alt="locket" class="image-locket">
@@ -114,6 +114,10 @@
             </div>
         </div>
     </div>
-
+    <script>
+        document.getElementById("projetoButtonLocket").addEventListener("click", function () {
+          window.location.href = "locket-project.html";
+        });
+      </script>
 </body>
 </html>
