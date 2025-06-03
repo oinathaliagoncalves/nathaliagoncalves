@@ -11,7 +11,7 @@
 <body>
 
     <nav id="navbar">
-        <div class="left">NATHÁLIA GONÇALVES</div>
+        <div class="left"> <a href="index.html"> NATHÁLIA GONÇALVES</a></div>
         <div class="right">
             <a href="#projects">PROJECTS</a>
             <a href="#about">ABOUT</a>
@@ -33,7 +33,7 @@
         <img class="spiral" src="Espiral/Default.png" alt="Purple spiral">
         <h2>PROJECTS</h2>
 
-        <div class="portfolio"></div>
+       
             <div class="locketContainer">
                 <div class="locket">
                     <!-- colocado tudo isso dentro da div locket -->
@@ -49,6 +49,22 @@
             </div>
         </div>
     </div>    
+
+            <div class="websiteContainer">
+                <div class="website">
+                    <!-- colocado tudo isso dentro da div locket -->
+                    <div class="websiteText">
+                        <h3><b>PORTFOLIO WEBSITE</b></h3>
+                        <p class="websiteFrase"> I designed and developed this portfolio from scratch using HTML and CSS to showcase my UX/UI work.</p> 
+                        <button class="projetoButtonWebsite" id="projetoButtonWebsite">VIEW PROJECT</button>
+                    </div>
+                    <div>
+                        <img src="Website.png" alt="Portfolio" class="imageWebsite">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
 
        
     <div class="purple-block">
@@ -117,6 +133,11 @@
     <script>
         document.getElementById("projetoButtonLocket").addEventListener("click", function () {
           window.location.href = "locket-project.html";
+        });
+      </script>
+       <script>
+        document.getElementById("projetoButtonWebsite").addEventListener("click", function () {
+          window.location.href = "website-project.html";
         });
       </script>
 </body>
