@@ -406,10 +406,9 @@ h3 {
 }
 
 .locktText {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 1.5rem; 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5;
     width: 100%;
 }
@@ -442,17 +441,14 @@ h3 {
 }
 
 .portfolioWebsiteText{
-    font-family: "Merriweather", serif;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 1.5rem; 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5;
     width: 100%;
 }
 
-.oldWebsiteImageContainer{
-    width: 50%;
-}
+
 
 
 @media (max-width: 1200px) {
