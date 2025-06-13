@@ -79,7 +79,6 @@ body {
 
 h1 {
     max-width: 600px;
-    font-family: "Merriweather", serif;
     font-weight: 300;
     font-size: 2.2rem; /* Base font size */
     letter-spacing: 3px;
@@ -150,11 +149,11 @@ h2 {
 .websiteContainer {
     display: grid;
     place-items: center;
+    margin-bottom: 5%;
 }
 
 .website {
     display: flex;
-    justify-content: space-between; /* Coloca os elementos da div posicionados distantes um do outro */
     padding-top: 50px;
     padding-left: 100px;     
     background-color: rgba(109, 26, 95, 1);
@@ -169,7 +168,8 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 100px
+    padding-bottom: 100px;
+
 }
 
 .imageWebsite {
@@ -376,7 +376,7 @@ h3 {
     gap: 5rem;
 }
 
-.letsTalkText a{
+.letsTalkText a {
     color: black;
     text-decoration: none;
 }
@@ -384,6 +384,7 @@ h3 {
 
 .letsTalkText a:hover {
     color: rgb(166, 85, 152);
+    
 }
 
 .goldBlockContainer {
@@ -414,11 +415,17 @@ h3 {
 }
 
 .locketImagePage {
-    width: 100%;
+    width: 80%;
 }
 
 .locketTitle {
     color: rgb(247, 240, 232);
+}
+
+.locketImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .darkPurpleBlockContainer {
