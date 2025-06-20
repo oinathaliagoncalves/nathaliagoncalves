@@ -66,10 +66,11 @@ body {
 .yellowBlockContainer {
     width: 100%;
     display: flex;
+    flex-wrap: wrap-reverse;
     background: rgb(236, 199, 76);
-    height: 100vh;
     align-items: center;
     justify-content: space-around;
+    padding: 10% 0;
 }
 
 .overlay-image {
@@ -258,7 +259,9 @@ h3 {
 
 .containerSkills {
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+    /*justify-content:space-around;*/
     color:rgb(247, 240, 232);
     font-size: 1.5rem;
     font-weight: 600;
@@ -309,9 +312,9 @@ h3 {
 }
 
 .containerAbout {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2rem;
     padding: 5rem 10rem;
     align-items: center;
 }
@@ -320,19 +323,16 @@ h3 {
 
 .aboutText {
 
-    font-family: "Merriweather", serif;
     font-weight: 300;
     font-size: 1rem; 
     letter-spacing: 2px;
-    line-height: 1.5;
     padding-top: 10%;
-    width: 100%;
 
 }
 
 .aboutImage {
     max-width: 600px; 
-    width: 40vw;
+    
 }
 
 .container {
@@ -469,7 +469,7 @@ h3 {
 
 
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .containerAbout {
         padding: 5rem;
     }
