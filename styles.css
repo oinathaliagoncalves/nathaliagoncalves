@@ -32,7 +32,7 @@ body {
 
 .left {
     
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 1vw + 1rem, 2rem);
     color: black;
     font-weight: 400;
     padding-left: 2rem;
@@ -47,7 +47,7 @@ body {
 }
 
 .right a {
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 1vw + 0.8rem, 1.2rem);
     transition: color 0.3s;
     white-space: nowrap; /* Prevent text wrapping */
     position: relative;
@@ -81,7 +81,7 @@ body {
 h1 {
     max-width: 600px;
     font-weight: 300;
-    font-size: 2.2rem; /* Base font size */
+    font-size: clamp(0.5rem, 1vw + 1rem, 2.2rem);
     letter-spacing: 3px;
     line-height: 1.2;
     padding: 20px;
@@ -96,9 +96,10 @@ h1 {
 }
 
 .spiral {
+    width: 10vw;
     position: absolute;
     right: 10%;
-    top: -5rem;
+    top:  -5rem;
 }
 
 #projects h2 {
@@ -106,7 +107,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: clamp(0.5rem, 1vw + 2rem, 3.5rem);
     font-weight: 600;
     padding-top: 2rem;
     justify-content: center;
@@ -466,7 +467,70 @@ h3 {
     align-items: center;
 }
 
+/* Base styles */
+.burger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  
 
+@media (max-width: 997px) {
+    .burger {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 1001;
+        font-size: 2rem;
+      }
+    
+      #navbar {
+        position: relative;
+      }
+    
+      .right {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(247, 240, 232, 1);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem;
+      }
+    
+      .right.active {
+        display: flex;
+      }
+    
+      .right a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+    
+      .right a:hover {
+        color: #ffd700;
+      }
+    }
+
+
+
+@media (max-width: 768px) {
+    .spiral {
+        top: -2rem;
+    }
+    .yellowBlockContainer {
+        padding-top: 3rem;
+    }
+}
 
 
 /*@media (max-width: 1200px) {
@@ -491,7 +555,7 @@ h3 {
     }
 
     .spiral {
-        transform: scale(0.7);
+        top: 5rem;
     }
     
     .locket {

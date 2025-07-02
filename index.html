@@ -11,14 +11,21 @@
 <body>
 
     <nav id="navbar">
-        <div class="left"> <a href="index.html"> NATHÁLIA GONÇALVES</a></div>
-        <div class="right">
-            <a href="#projects">PROJECTS</a>
-            <a href="#about">ABOUT</a>
-            <a href="https://drive.google.com/file/d/1McUkZ2TtYyXc1Q5DrQxI271EACAuDi0o/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
-            <a href="#contact">CONTACT</a>
+        <div class="left">
+          <a href="index.html">NATHÁLIA GONÇALVES</a>
         </div>
-    </nav>
+      
+        <div class="burger" id="burger">
+          ☰
+        </div>
+      
+        <div class="right" id="menu">
+          <a href="#projects">PROJECTS</a>
+          <a href="#about">ABOUT</a>
+          <a href="https://drive.google.com/file/d/1McUkZ2TtYyXc1Q5DrQxI271EACAuDi0o/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </nav>
 
     <div class="yellowBlockContainer">
         <h1><b class="H1bold"> UX/UI Designer Junior</b> skilled in user research, wireframing, and prototyping, 
@@ -140,5 +147,14 @@
           window.location.href = "website-project.html";
         });
       </script>
+       <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+      
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      </script>
+    
 </body>
 </html>
