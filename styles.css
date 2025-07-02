@@ -119,6 +119,7 @@ h2 {
 .locketContainer {
     display: grid;
     place-items: center;
+
 }
 
 .locket {
@@ -230,20 +231,19 @@ h3 {
 
 .locketFrase {
     color: rgb(247, 240, 232);
-    font-size: 2rem;
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
 }
 
 .purple-block {
     position: relative;
     background-color: rgba(166, 85, 152, 1);
     width: 100%;
-    height: 100%;
     justify-content:center;
-    height: 100vh; /* Full viewport height */
-    min-height: 1000px; /* Minimum height for large content */
+    min-height: 1000px;
 }
 
 .asterisk {
+    width: 10vw;
     position: absolute;
     left: 10%;
     top: -5rem
@@ -321,7 +321,6 @@ h3 {
 }
 
 
-
 .aboutText {
 
     font-weight: 300;
@@ -333,6 +332,7 @@ h3 {
 
 .aboutImage {
     max-width: 600px; 
+    width: 40vw;
     
 }
 
@@ -391,8 +391,6 @@ h3 {
 .goldBlockContainer {
     position: relative;
     background-color: rgba(192, 150, 45, 1);
-    width: 100%;
-    height: 400px;
     display: flex;
     justify-content: space-around;
     padding: 10rem;
@@ -432,8 +430,6 @@ h3 {
 .darkPurpleBlockContainer {
     position: relative;
     background-color: rgb(63, 14, 55);
-    width: 100%;
-    height: 400px;
     display: flex;
     justify-content: space-around;
     padding: 10rem;
@@ -519,17 +515,31 @@ h3 {
       .right a:hover {
         color: #ffd700;
       }
+      .image-locket {
+        display: none;
+    }
+    .imageWebsite {
+        display: none;
+    }
     }
 
 
 
 @media (max-width: 768px) {
     .spiral {
+        width: 15vw;
         top: -2rem;
     }
+    .asterisk {
+        width: 15vw;
+        top: -2rem;
+
+    }
+
     .yellowBlockContainer {
         padding-top: 3rem;
     }
+   
 }
 
 

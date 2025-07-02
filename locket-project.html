@@ -11,14 +11,21 @@
 <body>
 
     <nav id="navbar">
-        <div class="left"> <a href="index.html"> NATHÁLIA GONÇALVES</a></div>
-        <div class="right">
-            <a href="index.html#projects">PROJECTS</a>
-            <a href="index.html#about">ABOUT</a>
-            <a href="https://drive.google.com/file/d/1McUkZ2TtYyXc1Q5DrQxI271EACAuDi0o/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
-            <a href="#contact">CONTACT</a>
+        <div class="left">
+          <a href="index.html">NATHÁLIA GONÇALVES</a>
         </div>
-    </nav>
+      
+        <div class="burger" id="burger">
+          ☰
+        </div>
+      
+        <div class="right" id="menu">
+          <a href="#projects">PROJECTS</a>
+          <a href="#about">ABOUT</a>
+          <a href="https://drive.google.com/file/d/1McUkZ2TtYyXc1Q5DrQxI271EACAuDi0o/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </nav>
 
     <div class="goldBlockContainer">
         <h2 class="locketTitle">LOCKET - Mobile App Research</h2>
@@ -46,3 +53,14 @@
             </div>
         </div>
     </div>
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+      
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      </script>
+    
+</body>
+</html>
