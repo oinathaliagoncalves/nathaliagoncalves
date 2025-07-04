@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -125,8 +126,8 @@ h2 {
 .locket {
     display: flex;
     justify-content: space-between; /* Coloca os elementos da div posicionados distantes um do outro */
-    padding-top: 50px;
-    padding-left: 100px;     
+    padding-top: 4rem;
+    padding-left: clamp(0.5rem, 1vw + 4rem, 5rem);     
     background-color: rgb(192, 150, 45);
     margin-top: 100px;
     width: 80%;
@@ -157,8 +158,8 @@ h2 {
 
 .website {
     display: flex;
-    padding-top: 50px;
-    padding-left: 100px;     
+    padding-top: 4rem;
+    padding-left: clamp(0.5rem, 1vw + 4rem, 5rem);    
     background-color: rgba(109, 26, 95, 1);
     margin-top: 100px;
     width: 80%;
@@ -171,7 +172,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding-bottom: clamp(0.5rem, 1vw + 4rem, 5rem);
 
 }
 
@@ -287,7 +288,7 @@ h3 {
 }
 
 .skill {
-    width: 60%;
+    width: 80%;
     margin: 2rem 2rem;
     text-align: center;
     padding: 1rem 1.5rem;
@@ -449,7 +450,7 @@ h3 {
     background-color: rgb(63, 14, 55);
     display: flex;
     justify-content: space-around;
-    padding: 10rem;
+    padding: clamp(5rem, 10vw, 10rem);
   
 }
 
