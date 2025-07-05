@@ -417,13 +417,13 @@ h3 {
 
 .locketTextContainer {
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+    flex-direction: column;
+    gap: 2rem;
     padding: 5rem clamp(5rem, 10vw, 25rem);
     align-items: center;
 }
 
-.locketText {
+.locketTextProject {
     font-weight: 350;
     font-size: clamp(1rem, 2vw, 1.5rem); 
     letter-spacing: 1px;
