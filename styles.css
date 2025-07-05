@@ -127,7 +127,7 @@ h2 {
     display: flex;
     justify-content: space-between; /* Coloca os elementos da div posicionados distantes um do outro */
     padding-top: 4rem;
-    padding-left: clamp(0.5rem, 1vw + 4rem, 5rem);     
+    padding-left: clamp(0.5rem, 3vw + 2rem, 5rem);     
     background-color: rgb(192, 150, 45);
     margin-top: 100px;
     width: 80%;
@@ -159,7 +159,7 @@ h2 {
 .website {
     display: flex;
     padding-top: 4rem;
-    padding-left: clamp(0.5rem, 1vw + 4rem, 5rem);    
+    padding-left: clamp(0.5rem, 3vw + 2rem, 5rem);    
     background-color: rgba(109, 26, 95, 1);
     margin-top: 100px;
     width: 80%;
