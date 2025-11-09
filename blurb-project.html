@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nathália Gonçalves</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="left">
+          <a href="index.html">NATHÁLIA GONÇALVES</a>
+        </div>
+      
+        <div class="burger" id="burger">
+          ☰
+        </div>
+      
+        <div class="right" id="menu">
+          <a href="index.html#projects">PROJECTS</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="https://drive.google.com/file/d/1TXdJ5b_ROTtzWkYZaMwty70nZsx70MJB/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
+          <a href="index.html#contact">CONTACT</a>
+        </div>
+      </nav>
+
+    <div class="darkBlueBlockContainer">
+        <h2 class="locketTitle">PORTFOLIO - BLURB</h2>
+    </div>
+
+    <div class="websiteTextContainer"> 
+        <p class="portfolioWebsiteText"> I designed Blurb as a UI/UX concept project focused on creating a playful and expressive reading tracker. The goal was to bring personality and emotion to the reading app experience, combining functionality with bold visual identity. The project included user research, wireframes, and high-fidelity design to explore usability, visual hierarchy, and engagement. </p>
+
+            <p class="portfolioWebsiteText"><b>Tools Used:</b> Figma </p>
+            <p class="portfolioWebsiteText"><b>Features:</b>community feed with likes and comments, reading goals tracking, star ratings, and a login-free onboarding experience using local storage.</p>
+    </div>
+
+    <div class="websiteImageContainer">
+
+        <img src="Blurb.jpg" alt="sliceOneWebsite" class="slice">
+
+    </div>
+
+    <div class="letsTalkOuterBlock" id="contact">
+        <div class="letsTalkInnerBlock">
+            <h2 class="letsTalkTitle">LET'S TALK</h2> 
+            <div class="letsTalkText">
+                <a href="mailto:oi@nathaliagoncalves.com">oi@nathaliagoncalves.com</a>
+                <a href="tel:+55 51 997947996">+55 51 997947996</a>
+                <a href="https://www.linkedin.com/in/nathalia--goncalves/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+      
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      </script>
+    
+</body>
+</html>

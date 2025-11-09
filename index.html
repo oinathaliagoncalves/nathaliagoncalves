@@ -40,7 +40,22 @@
         <img class="spiral" src="Espiral/Default.png" alt="Purple spiral">
         <h2>PROJECTS</h2>
 
-       
+            <div class="blurbContainer">
+                <div class="blurb">
+                    <!-- colocado tudo isso dentro da div locket -->
+                    <div class="blurbText">
+                        <h3><b>BLURB</b></h3>
+                        <p class="blurbFrase"> A concept for a colorful, playful reading tracker that blends fun design with functionality, and a sense of community.</p> 
+                        <button class="projetoButtonBlurb" id="projetoButtonBlurb">VIEW PROJECT</button>
+                    </div>
+                    <div>
+                        <img src="blurb-imagem.png" alt="blurb" class="image-blurb">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
             <div class="locketContainer">
                 <div class="locket">
                     <!-- colocado tudo isso dentro da div locket -->
@@ -150,6 +165,11 @@
       
         burger.addEventListener("click", () => {
           menu.classList.toggle("active");
+        });
+      </script>
+      <script>
+        document.getElementById("projetoButtonBlurb").addEventListener("click", function () {
+          window.location.href = "blurb-project.html";
         });
       </script>
     
